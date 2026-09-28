@@ -1,0 +1,141 @@
+{
+  "results/raw/confidence_trace.json": {
+    "kind": "json",
+    "sha256": "e82c3c0cdb0dd5721120b4a283c3ed15080e32042f124e889c4dcae4c1037d8e"
+  },
+  "results/raw/config.json": {
+    "kind": "json",
+    "sha256": "2a2249ca4fb64bb1861ab33e919c52c73e0352fd34506c37caea4ed0cbd02754"
+  },
+  "results/raw/coverage_replicates.json": {
+    "kind": "json",
+    "sha256": "cffd019683426bb0b4884d39a209919121dd5d2ec8182e4fa2adf445f77dcfb5"
+  },
+  "results/raw/endpoints.json": {
+    "kind": "json",
+    "sha256": "8cfb0f2a8d666672bfaab2956f4f55b652f29853f64a470e89a676faee899743"
+  },
+  "results/raw/flow_certificates.json": {
+    "kind": "json",
+    "sha256": "afa6f471208d51e030b76623cee4aeaa0f12bdaf96f069ea27be9d63dcaeca87"
+  },
+  "results/raw/framework.json": {
+    "kind": "json",
+    "sha256": "8720ef816e8b39b21b9965e7eeffc3a52bd7ec195fd0cee551b53556a6b8824c"
+  },
+  "results/raw/general_matrix_lift_check.json": {
+    "kind": "json",
+    "sha256": "d947a1d1168148a943eb538281ae323b968ff61ba6f750b19e1b2ad4d77d4be1"
+  },
+  "results/raw/six_state_check.json": {
+    "kind": "json",
+    "sha256": "a4e899e9746ed936d6ae10bb09708dde79e51c0a0371b90b36622c417cfa0f7a"
+  },
+  "results/raw/vehicle_simulation.json": {
+    "kind": "json",
+    "sha256": "fe6044fd9b9693a5bd6312b473aad315fc328b97b9c5f99a07ba2a0256e18fcb"
+  },
+  "results/raw/platoon_matrices.npz": {
+    "kind": "npz",
+    "arrays": {
+      "Acl": {
+        "shape": [
+          30,
+          30
+        ],
+        "dtype": "float64",
+        "sha256": "72cd8786caf90b42bf34a8857a33601e0ffe77d27f9ce9e42139746517e1bdaf"
+      },
+      "Be": {
+        "shape": [
+          30,
+          10
+        ],
+        "dtype": "float64",
+        "sha256": "dac35d6ed469904cb0ba9e930f5f8ef1f56e656e10e394f626503b829a535cc9"
+      },
+      "N": {
+        "shape": [],
+        "dtype": "int32",
+        "sha256": "075de2b906dbd7066da008cab735bee896370154603579a50122f9b88545bd45"
+      },
+      "acceleration": {
+        "shape": [
+          10,
+          30
+        ],
+        "dtype": "float64",
+        "sha256": "cb4d3873d8d6a8bc706bddd63ee0e50047e64043813dce76741da2b7faeb4365"
+      },
+      "dt": {
+        "shape": [],
+        "dtype": "float64",
+        "sha256": "7f925b2036e92fe2f1f0697c3aedfff74d719c1ee2cb6b739d7c30484e75972c"
+      },
+      "jerk_e": {
+        "shape": [
+          10,
+          10
+        ],
+        "dtype": "float64",
+        "sha256": "91a5ce5290605043fe96faf89b0d6daa43ee3215a67dd97a3b6a7f7ce5cbf154"
+      },
+      "jerk_z": {
+        "shape": [
+          10,
+          30
+        ],
+        "dtype": "float64",
+        "sha256": "858f3d2740f0d30643852678acb02a13972d72f13da0ffde01897cd22ea69b92"
+      },
+      "spacing": {
+        "shape": [
+          10,
+          30
+        ],
+        "dtype": "float64",
+        "sha256": "c58294bc6854e0c7d39636cd447b5c94970801571fd099a68c7a4e1d6c8118c9"
+      },
+      "velocity": {
+        "shape": [
+          10,
+          30
+        ],
+        "dtype": "float64",
+        "sha256": "1769f3bd41f73579793c2d25eff7685e0b9f39a9a31c27d2d9fa8285475ac8a6"
+      }
+    }
+  },
+  "results/raw/six_state_trajectory.npz": {
+    "kind": "npz",
+    "arrays": {
+      "states": {
+        "shape": [
+          50001
+        ],
+        "dtype": "int8",
+        "sha256": "43aa5c2e84e5b511b29c35b96ee995a00ed1ebd10861c8516842f3dac7de628f"
+      }
+    }
+  },
+  "results/raw/synchronized_trajectory.npz": {
+    "kind": "npz",
+    "arrays": {
+      "states": {
+        "shape": [
+          1000001
+        ],
+        "dtype": "int8",
+        "sha256": "c60d2a509c5b959592d63072443fcd5c87e2d8fe0bffa667e2e11607debcb6bd"
+      }
+    }
+  },
+  "results/processed/summary.json": {
+    "kind": "json",
+    "sha256": "e5022154461bcd02b1a06a601576566c33770ef74c6acbf86fcfc16234a4952c"
+  },
+  "results/processed/figure_data.json": {
+    "kind": "json",
+    "sha256": "2a231a732f4134b3bf64310eb018f0841a3991755de484b9361319ed4ca0c63b"
+  }
+}
