@@ -46,4 +46,4 @@ The larger research archive separately passed all 76 inherited checks (21 curren
 
 Marginal kernels are exact; joint dynamics satisfy strong conditional marginal consistency. Success depends only on the current channel, reset innovations are exogenous and conditionally independent, and source and fixed controller are Schur stable. RMS reports communication-induced stationary expected energy. The vehicle experiment is a fixed finite cascade; it does not establish string stability or collision safety.
 
-The repository is private. Uploading it does not publish the paper or submit it to a journal. No public redistribution license has been added.
+The repository is public for reproducibility. Publishing this code does not publish the manuscript or submit it to a journal. No redistribution license has been added; absent an explicit license, copyright remains with the authors.
