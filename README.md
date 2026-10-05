@@ -1,6 +1,6 @@
 # TCNS partial-identification certificate: minimal reproduction
 
-Companion code for **Performance Certificates for Networked Estimation and Control with Partially Identified Sensing--Channel Dependence**. This repository contains the frozen reset-estimation, dependent-path confidence, exact colored covariance, and fixed ten-follower experiments. It contains no manuscript PDFs, source literature, proposal files, or historical projects.
+Companion code for **Performance Certificates for Networked Estimation and Control with Partially Identified Sensing--Channel Dependence**. Here, structural identification intervals and data-refined confidence intervals support the task-level performance certificate. This repository contains the frozen reset-estimation, dependent-path confidence, exact colored covariance, and fixed ten-follower experiments. It contains no manuscript PDFs, source literature, proposal files, or historical projects.
 
 ## Environment and commands
 
@@ -17,13 +17,13 @@ python reproduce.py --full
 
 Alternatively: `conda env create -f environment.yml`, then `conda activate tcns-repro`.
 
-`--check` (the default) runs 21 focused checks against the small frozen reference records. It does not rerun the Monte Carlo experiments. `--full` regenerates every saved scientific numerical artifact, all six PDF/PNG figures, verifies their scientific digests, and runs the 21 checks. Generated files go to `results/` and `paper/figures/`, which are ignored by Git. Typical runtime is around one minute on the reference machine; slower machines may take longer. No external data or network connection is needed after dependencies are installed.
+`--check` (the default) runs 21 focused checks against the small frozen reference records. It does not rerun the Monte Carlo experiments. `--full` regenerates every saved scientific numerical artifact and six reference figures, verifies their scientific digests, and runs the 21 checks. The final manuscript uses five generated numerical figures; its overall framework Fig. 1 is author-supplied artwork included with the journal source. Generated files go to `results/` and `paper/figures/`, which are ignored by Git. Typical runtime is around one minute on the reference machine; slower machines may take longer. No external data or network connection is needed after dependencies are installed.
 
 ## Fixed experiments and expected result
 
 The synchronized path has 1,000,000 transitions, starts at 00, and uses seed 20260928. Coverage uses 200 paths of 50,000 transitions, seed 20260930. Vehicle validation uses 20 repetitions, 10,000 burn-in plus 100,000 measured slots, seed 20261001. The existing six-state validation uses seed 20261002. No seed search is performed.
 
-True spacing RMS is 0.1894681530 m. Its structural interval is [0.178322, 0.203682] m to the displayed precision, and its refined interval is [0.186919, 0.191794] m after 1,000,000 synchronized transitions. The exact saved energy endpoints, rather than these rounded display values, are used for verification. Final row exit counts are [335030, 413794, 102456, 148720].
+True spacing RMS is 0.1894681530 m. Its structural identification interval is [0.178322, 0.203682] m to the displayed precision, and its data-refined confidence interval is [0.186919, 0.191794] m after 1,000,000 synchronized transitions. The exact saved energy endpoints, rather than these rounded display values, are used for verification. Final row exit counts are [335030, 413794, 102456, 148720].
 
 `reference/manifest.json` covers all 14 scientific output files: 11 JSON files and three NPZ files. JSON hashes use sorted canonical serialization and omit only `runtime_seconds`; NPZ arrays are compared by names, dtype, shape, and array-content hashes. PDF timestamps and renderer metadata are not scientific comparison targets. Floating-point solver/BLAS differences on other platforms can change exact digests; the strict verification is validated in the reference environment, and a mismatch should be inspected rather than silently accepted.
 
